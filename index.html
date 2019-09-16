@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html ng-app='MenuApp'>
+<html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css">
-    <title>Restaurant Menu</title>
-  </head>
-  <body>
-    <h2><center>Restaurant Menu Interface</center></h2>
 
-    <ui-view></ui-view>
-
-    <!-- Libraries -->
+    <!-- Libraries for angular and ui router-->
     <script src="angular.min.js"></script>
     <script src="angular-ui-router.min.js"></script>
-
-    <!-- Modules -->
+    <!-- modules for the app -->
     <script src="src/menuapp/menuapp.module.js"></script>
     <script src="src/data/data.module.js"></script>
+    <!-- routes for the app -->
+    <script src="routes.js"></script>
 
-    <!-- Routes -->
-    <script src="route.js"></script>
-
+    <!-- components for the app -->
     <script src="src/menuapp/categories.component.js"></script>
     <script src="src/menuapp/items.component.js"></script>
+    <!--  controllers for the app -->
     <script src="src/menuapp/category-list.controller.js"></script>
     <script src="src/menuapp/items.controller.js"></script>
+    <!-- service for the app -->
     <script src="src/data/menudata.service.js"></script>
 
+
+    <title>Restaurant Menu</title>
+  </head>
+  <body ng-app="MenuApp">
+    <div>Eng.Azzam Ali , Email me @ Azzamazezali@gmail.com </div>
+    <h1>Welcome to our Restaurant</h1>
+
+
+    <ui-view></ui-view>
   </body>
 </html>
